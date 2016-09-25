@@ -36,8 +36,8 @@ error: failed to push some refs to &#39;git@github.com:jane0219/test.git&#39;</c
     </entry>
     
     <entry>
-      <title><![CDATA[markdown语法指南]]></title>
-      <url>https://jane0219.github.io/2016/09/24/markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/</url>
+      <title><![CDATA[Git命令和错误集锦]]></title>
+      <url>https://jane0219.github.io/2016/09/25/markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/</url>
       <content type="html"><![CDATA[<h3 id="markdown语法指南"><a href="#markdown语法指南" class="headerlink" title="markdown语法指南"></a>markdown语法指南</h3><hr>
 <h4 id="入门说明："><a href="#入门说明：" class="headerlink" title="入门说明："></a>入门说明：</h4><hr>
 <p>定义：markdown 是一种轻量级标记语言，可以使用普通文本编辑器进行编辑的纯文本编辑语言。它可以把一篇纯文本文章转化为富文本，让读者得到清晰明了的阅读体验。<br>用途：markdown的语法简洁明了，所以很多人用它来写博客，就像我一样。</p>
