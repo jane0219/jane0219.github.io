@@ -4,39 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[Git命令和错误集锦]]></title>
-      <url>https://jane0219.github.io/2016/09/25/Git%20%E5%91%BD%E4%BB%A4%E5%92%8C%E9%94%99%E8%AF%AF%E9%9B%86%E9%94%A6/</url>
-      <content type="html"><![CDATA[<h3 id="Git-命令和错误集锦"><a href="#Git-命令和错误集锦" class="headerlink" title="Git 命令和错误集锦"></a>Git 命令和错误集锦</h3><hr>
-<h4 id="前话：安装git"><a href="#前话：安装git" class="headerlink" title="前话：安装git"></a>前话：安装git</h4><p>官方网站下载：<br><a href="http://code.google.com/p/msysgit/downloads/list" target="_blank" rel="external">http://code.google.com/p/msysgit/downloads/list</a></p>
-<p> 下载安装包后，打开执行，然后一路next.<br> 安装完成后，在桌面右键会出现 git bash here的标志和字样，说明安装成功。<br><a id="more"></a><br>然后我们就需要与远程的github相连接，才能进行本地管理。这仅需要三步：<br><code>$ git config --global user.name 你的github名称</code><br><code>$ git config --global user.email 你注册github的邮箱</code></p>
-<p> 注意：这里的–global代表你电脑的所有本地仓库都会使用你的这个配置。</p>
-<p>然后执行 $ssh-keygen -t rsa -C “你的邮箱”这里会让你输入密码，我们选择默认直接enter就行，不然之后可能会报错。<br>执行完后这时候会在你的电脑的 C/用户/Adiministor/.ssh/id_rsa.pub 生成这个key文件（id_rsa.pub）<br><img src="/images/1474722294367.png" alt="Alt text"></p>
-<p>找到打开它，复制里面的代码然后到你的github上，右侧点击头像下面的setting<br><img src="/images/1474722248866.png" alt="Alt text"><br>然后点击左边栏的SSH and GPG key<br><img src="/images/1474722385417.png" alt="Alt text"><br>然后点击new SSH key进行key添加，把你电脑上的key粘贴到key下面的内容区，然后点 add ssh key<br><img src="/images/1474722569368.png" alt="Alt text"></p>
-<p>至此你本地已经和github链接上了</p>
-<hr>
-<h4 id="（一）向远端提交项目："><a href="#（一）向远端提交项目：" class="headerlink" title="（一）向远端提交项目："></a>（一）向远端提交项目：</h4><h6 id="如果之前没有建立本地仓库的话先执行这里："><a href="#如果之前没有建立本地仓库的话先执行这里：" class="headerlink" title="如果之前没有建立本地仓库的话先执行这里："></a>如果之前没有建立本地仓库的话先执行这里：</h6><p>在桌面右击 git bash here   //（已经装过git了）<br>mkdir 文件夹名   //新建文件夹（作为本地仓库）<code>比如：mkdir project</code><br> cd project           //进入文件夹<br>git init             //初始化本地仓库</p>
-<h6 id="如果已经有本地仓库了，从这部开始就行"><a href="#如果已经有本地仓库了，从这部开始就行" class="headerlink" title="如果已经有本地仓库了，从这部开始就行:"></a>如果已经有本地仓库了，从这部开始就行:</h6><p>git add 文件名/<em>  ( “ </em> ” 代表所有文件)<br>git commit –m “解释说明” （解释必须带上，避免进入文件编辑界面，如果进去了按ESC 然后：wq,再回车）<br>git remote add origin 远程地址 //建立远程连接<br>git push –set-upstream origin master<br>git push</p>
-<p>至此如果没有出错的话文件就提交到远程版本库了</p>
-<hr>
-<h4 id="（二）建立分支："><a href="#（二）建立分支：" class="headerlink" title="（二）建立分支："></a>（二）建立分支：</h4><p>提醒：一般工作之后master上边的东西我们是没有权限更改的（那是QA的辖域），所以在master基础上需要建立自己的分支，在自己的分支上对项目进行更改。</p>
-<h5 id="分值操作："><a href="#分值操作：" class="headerlink" title="分值操作："></a>分值操作：</h5><p>git checkout –b 分支名  //在master基础上复制一条分支来，并切换到新分支上<br>git checkout 分支名   //切换到指定分支<br>git branch    //查看分支<br>git branch –a   //查看包括远程的（包括别人建立的）所有分支<br>git merge master   //将自己的项目与master上的东西进行合并（为了避免别人也更改了项目，master东西被更改了）</p>
-<hr>
-<h4 id="（三）常用命令："><a href="#（三）常用命令：" class="headerlink" title="（三）常用命令："></a>（三）常用命令：</h4><p>ls  //显示所在文件夹的所有文件<br>mkdir // 新建一个文件夹<br>touch  //新建一个文件(不是文件夹)<br>git status   //查看当前状态<br>rm 删除  //（慎用）</p>
-<hr>
-<h4 id="（四）提交文件常见错误："><a href="#（四）提交文件常见错误：" class="headerlink" title="（四）提交文件常见错误："></a>（四）提交文件常见错误：</h4><p>1  执行git remote add origin git@github.com:jane0219/test.git时报错：<br><code>fatal: remote origin already exists.</code><br>解决：执行git remote rm origin   //删除远程主机名</p>
-<p>2.执行 git push 时报<br><code>fatal: The current branch master has no upstream branch.</code><br>解决：执行 git push –set-upstream origin master  //与远程master建立连接</p>
-<p>3.执行git push –set-upstream origin master市报错：<br>        <code>! [rejected]        master -&gt; master (fetch first)  
-error: failed to push some refs to &#39;git@github.com:jane0219/test.git&#39;</code></p>
-<p>解决： git pull “远程地址” 再执行git add … //本地更改文件或者上传新文件前要先跟版本库的东西进行merge 合并，远程版本库有的东西本地仓库没有的话会报错（原因还不敢确定）</p>
-<ol>
-<li>git pull 时报错：<br><code>refusing to merge unrelated histories</code></li>
-</ol>
-<p>解决：执行git pull origin master –allow-unrelated-histories //让git接受合并跟之前的项目的 无关项（以前的文件里没有的东西）</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Git命令和错误集锦]]></title>
+      <title><![CDATA[markdown语法指南]]></title>
       <url>https://jane0219.github.io/2016/09/25/markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/</url>
       <content type="html"><![CDATA[<h3 id="markdown语法指南"><a href="#markdown语法指南" class="headerlink" title="markdown语法指南"></a>markdown语法指南</h3><hr>
 <h4 id="入门说明："><a href="#入门说明：" class="headerlink" title="入门说明："></a>入门说明：</h4><hr>
@@ -144,6 +112,38 @@ error: failed to push some refs to &#39;git@github.com:jane0219/test.git&#39;</c
 <h5 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h5><p>以上是一些比较常用的markdown语法的使用介绍，希望对大家学习markdown能带来帮助。如果有好的提议，欢迎大家跟我一起交流。</p>
 <p>本人博客：<a href="http://lxning.club" target="_blank" rel="external">http://lxning.club</a><br>邮箱：lxningdou@163.com</p>
 <p>出自：李晓宁</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Git命令和错误集锦]]></title>
+      <url>https://jane0219.github.io/2016/09/25/Git%20%E5%91%BD%E4%BB%A4%E5%92%8C%E9%94%99%E8%AF%AF%E9%9B%86%E9%94%A6/</url>
+      <content type="html"><![CDATA[<h3 id="Git-命令和错误集锦"><a href="#Git-命令和错误集锦" class="headerlink" title="Git 命令和错误集锦"></a>Git 命令和错误集锦</h3><hr>
+<h4 id="前话：安装git"><a href="#前话：安装git" class="headerlink" title="前话：安装git"></a>前话：安装git</h4><p>官方网站下载：<br><a href="http://code.google.com/p/msysgit/downloads/list" target="_blank" rel="external">http://code.google.com/p/msysgit/downloads/list</a></p>
+<p> 下载安装包后，打开执行，然后一路next.<br> 安装完成后，在桌面右键会出现 git bash here的标志和字样，说明安装成功。<br><a id="more"></a><br>然后我们就需要与远程的github相连接，才能进行本地管理。这仅需要三步：<br><code>$ git config --global user.name 你的github名称</code><br><code>$ git config --global user.email 你注册github的邮箱</code></p>
+<p> 注意：这里的–global代表你电脑的所有本地仓库都会使用你的这个配置。</p>
+<p>然后执行 $ssh-keygen -t rsa -C “你的邮箱”这里会让你输入密码，我们选择默认直接enter就行，不然之后可能会报错。<br>执行完后这时候会在你的电脑的 C/用户/Adiministor/.ssh/id_rsa.pub 生成这个key文件（id_rsa.pub）<br><img src="/images/1474722294367.png" alt="Alt text"></p>
+<p>找到打开它，复制里面的代码然后到你的github上，右侧点击头像下面的setting<br><img src="/images/1474722248866.png" alt="Alt text"><br>然后点击左边栏的SSH and GPG key<br><img src="/images/1474722385417.png" alt="Alt text"><br>然后点击new SSH key进行key添加，把你电脑上的key粘贴到key下面的内容区，然后点 add ssh key<br><img src="/images/1474722569368.png" alt="Alt text"></p>
+<p>至此你本地已经和github链接上了</p>
+<hr>
+<h4 id="（一）向远端提交项目："><a href="#（一）向远端提交项目：" class="headerlink" title="（一）向远端提交项目："></a>（一）向远端提交项目：</h4><h6 id="如果之前没有建立本地仓库的话先执行这里："><a href="#如果之前没有建立本地仓库的话先执行这里：" class="headerlink" title="如果之前没有建立本地仓库的话先执行这里："></a>如果之前没有建立本地仓库的话先执行这里：</h6><p>在桌面右击 git bash here   //（已经装过git了）<br>mkdir 文件夹名   //新建文件夹（作为本地仓库）<code>比如：mkdir project</code><br> cd project           //进入文件夹<br>git init             //初始化本地仓库</p>
+<h6 id="如果已经有本地仓库了，从这部开始就行"><a href="#如果已经有本地仓库了，从这部开始就行" class="headerlink" title="如果已经有本地仓库了，从这部开始就行:"></a>如果已经有本地仓库了，从这部开始就行:</h6><p>git add 文件名/<em>  ( “ </em> ” 代表所有文件)<br>git commit –m “解释说明” （解释必须带上，避免进入文件编辑界面，如果进去了按ESC 然后：wq,再回车）<br>git remote add origin 远程地址 //建立远程连接<br>git push –set-upstream origin master<br>git push</p>
+<p>至此如果没有出错的话文件就提交到远程版本库了</p>
+<hr>
+<h4 id="（二）建立分支："><a href="#（二）建立分支：" class="headerlink" title="（二）建立分支："></a>（二）建立分支：</h4><p>提醒：一般工作之后master上边的东西我们是没有权限更改的（那是QA的辖域），所以在master基础上需要建立自己的分支，在自己的分支上对项目进行更改。</p>
+<h5 id="分值操作："><a href="#分值操作：" class="headerlink" title="分值操作："></a>分值操作：</h5><p>git checkout –b 分支名  //在master基础上复制一条分支来，并切换到新分支上<br>git checkout 分支名   //切换到指定分支<br>git branch    //查看分支<br>git branch –a   //查看包括远程的（包括别人建立的）所有分支<br>git merge master   //将自己的项目与master上的东西进行合并（为了避免别人也更改了项目，master东西被更改了）</p>
+<hr>
+<h4 id="（三）常用命令："><a href="#（三）常用命令：" class="headerlink" title="（三）常用命令："></a>（三）常用命令：</h4><p>ls  //显示所在文件夹的所有文件<br>mkdir // 新建一个文件夹<br>touch  //新建一个文件(不是文件夹)<br>git status   //查看当前状态<br>rm 删除  //（慎用）</p>
+<hr>
+<h4 id="（四）提交文件常见错误："><a href="#（四）提交文件常见错误：" class="headerlink" title="（四）提交文件常见错误："></a>（四）提交文件常见错误：</h4><p>1  执行git remote add origin git@github.com:jane0219/test.git时报错：<br><code>fatal: remote origin already exists.</code><br>解决：执行git remote rm origin   //删除远程主机名</p>
+<p>2.执行 git push 时报<br><code>fatal: The current branch master has no upstream branch.</code><br>解决：执行 git push –set-upstream origin master  //与远程master建立连接</p>
+<p>3.执行git push –set-upstream origin master市报错：<br>        <code>! [rejected]        master -&gt; master (fetch first)  
+error: failed to push some refs to &#39;git@github.com:jane0219/test.git&#39;</code></p>
+<p>解决： git pull “远程地址” 再执行git add … //本地更改文件或者上传新文件前要先跟版本库的东西进行merge 合并，远程版本库有的东西本地仓库没有的话会报错（原因还不敢确定）</p>
+<ol>
+<li>git pull 时报错：<br><code>refusing to merge unrelated histories</code></li>
+</ol>
+<p>解决：执行git pull origin master –allow-unrelated-histories //让git接受合并跟之前的项目的 无关项（以前的文件里没有的东西）</p>
 ]]></content>
     </entry>
     
