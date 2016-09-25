@@ -84,30 +84,27 @@
 
 
 
-<meta name="description" content="###Git 命令和错误集锦
-
+<meta name="description" content="Git 命令和错误集锦
 前话：安装git官方网站下载：http://code.google.com/p/msysgit/downloads/list
  下载安装包后，打开执行，然后一路next. 安装完成后，在桌面右键会出现 git bash here的标志和字样，说明安装成功。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小豌豆">
+<meta property="og:title" content="Git 命令和错误集锦">
 <meta property="og:url" content="https://jane0219.github.io/2016/09/25/Git 命令和错误集锦/index.html">
 <meta property="og:site_name" content="小豌豆">
-<meta property="og:description" content="###Git 命令和错误集锦
-
+<meta property="og:description" content="Git 命令和错误集锦
 前话：安装git官方网站下载：http://code.google.com/p/msysgit/downloads/list
  下载安装包后，打开执行，然后一路next. 安装完成后，在桌面右键会出现 git bash here的标志和字样，说明安装成功。">
-<meta property="og:image" content="https://jane0219.github.io/./1474722294367.png">
-<meta property="og:image" content="https://jane0219.github.io/./1474722248866.png">
-<meta property="og:image" content="https://jane0219.github.io/./1474722385417.png">
-<meta property="og:image" content="https://jane0219.github.io/./1474722569368.png">
-<meta property="og:updated_time" content="2016-09-25T11:53:12.000Z">
+<meta property="og:image" content="https://jane0219.github.io/images/1474722294367.png">
+<meta property="og:image" content="https://jane0219.github.io/images/1474722248866.png">
+<meta property="og:image" content="https://jane0219.github.io/images/1474722385417.png">
+<meta property="og:image" content="https://jane0219.github.io/images/1474722569368.png">
+<meta property="og:updated_time" content="2016-09-25T12:02:08.131Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小豌豆">
-<meta name="twitter:description" content="###Git 命令和错误集锦
-
+<meta name="twitter:title" content="Git 命令和错误集锦">
+<meta name="twitter:description" content="Git 命令和错误集锦
 前话：安装git官方网站下载：http://code.google.com/p/msysgit/downloads/list
  下载安装包后，打开执行，然后一路next. 安装完成后，在桌面右键会出现 git bash here的标志和字样，说明安装成功。">
-<meta name="twitter:image" content="https://jane0219.github.io/./1474722294367.png">
+<meta name="twitter:image" content="https://jane0219.github.io/images/1474722294367.png">
 
 
 
@@ -130,7 +127,7 @@
 
   <link rel="canonical" href="https://jane0219.github.io/2016/09/25/Git 命令和错误集锦/"/>
 
-  <title>  | 小豌豆 </title>
+  <title> Git 命令和错误集锦 | 小豌豆 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -313,7 +310,7 @@
             
             
               
-                
+                Git 命令和错误集锦
               
             
           </h1>
@@ -347,7 +344,7 @@
 
           
           
-             <span id="/2016/09/25/Git 命令和错误集锦/" class="leancloud_visitors" data-flag-title="">
+             <span id="/2016/09/25/Git 命令和错误集锦/" class="leancloud_visitors" data-flag-title="Git 命令和错误集锦">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -369,13 +366,12 @@
       
 
       
-        <p>###Git 命令和错误集锦</p>
-<hr>
+        <h3 id="Git-命令和错误集锦"><a href="#Git-命令和错误集锦" class="headerlink" title="Git 命令和错误集锦"></a>Git 命令和错误集锦</h3><hr>
 <h4 id="前话：安装git"><a href="#前话：安装git" class="headerlink" title="前话：安装git"></a>前话：安装git</h4><p>官方网站下载：<br><a href="http://code.google.com/p/msysgit/downloads/list" target="_blank" rel="external">http://code.google.com/p/msysgit/downloads/list</a></p>
 <p> 下载安装包后，打开执行，然后一路next.<br> 安装完成后，在桌面右键会出现 git bash here的标志和字样，说明安装成功。<br><a id="more"></a><br>然后我们就需要与远程的github相连接，才能进行本地管理。这仅需要三步：<br><code>$ git config --global user.name 你的github名称</code><br><code>$ git config --global user.email 你注册github的邮箱</code></p>
 <p> 注意：这里的–global代表你电脑的所有本地仓库都会使用你的这个配置。</p>
-<p>然后执行 $ssh-keygen -t rsa -C “你的邮箱”这里会让你输入密码，我们选择默认直接enter就行，不然之后可能会报错。<br>执行完后这时候会在你的电脑的 C/用户/Adiministor/.ssh/id_rsa.pub 生成这个key文件（id_rsa.pub）<br><img src="./1474722294367.png" alt="Alt text"></p>
-<p>找到打开它，复制里面的代码然后到你的github上，右侧点击头像下面的setting<br><img src="./1474722248866.png" alt="Alt text"><br>然后点击左边栏的SSH and GPG key<br><img src="./1474722385417.png" alt="Alt text"><br>然后点击new SSH key进行key添加，把你电脑上的key粘贴到key下面的内容区，然后点 add ssh key<br><img src="./1474722569368.png" alt="Alt text"></p>
+<p>然后执行 $ssh-keygen -t rsa -C “你的邮箱”这里会让你输入密码，我们选择默认直接enter就行，不然之后可能会报错。<br>执行完后这时候会在你的电脑的 C/用户/Adiministor/.ssh/id_rsa.pub 生成这个key文件（id_rsa.pub）<br><img src="/images/1474722294367.png" alt="Alt text"></p>
+<p>找到打开它，复制里面的代码然后到你的github上，右侧点击头像下面的setting<br><img src="/images/1474722248866.png" alt="Alt text"><br>然后点击左边栏的SSH and GPG key<br><img src="/images/1474722385417.png" alt="Alt text"><br>然后点击new SSH key进行key添加，把你电脑上的key粘贴到key下面的内容区，然后点 add ssh key<br><img src="/images/1474722569368.png" alt="Alt text"></p>
 <p>至此你本地已经和github链接上了</p>
 <hr>
 <h4 id="（一）向远端提交项目："><a href="#（一）向远端提交项目：" class="headerlink" title="（一）向远端提交项目："></a>（一）向远端提交项目：</h4><h6 id="如果之前没有建立本地仓库的话先执行这里："><a href="#如果之前没有建立本地仓库的话先执行这里：" class="headerlink" title="如果之前没有建立本地仓库的话先执行这里："></a>如果之前没有建立本地仓库的话先执行这里：</h6><p>在桌面右击 git bash here   //（已经装过git了）<br>mkdir 文件夹名   //新建文件夹（作为本地仓库）<code>比如：mkdir project</code><br> cd project           //进入文件夹<br>git init             //初始化本地仓库</p>
@@ -469,7 +465,7 @@ error: failed to push some refs to &#39;git@github.com:jane0219/test.git&#39;</c
     <div class="post-spread">
       
         <div class="ds-share flat" data-thread-key="2016/09/25/Git 命令和错误集锦/"
-     data-title=""
+     data-title="Git 命令和错误集锦"
      data-content=""
      data-url="https://jane0219.github.io/2016/09/25/Git 命令和错误集锦/">
   <div class="ds-share-inline">
@@ -499,7 +495,7 @@ error: failed to push some refs to &#39;git@github.com:jane0219/test.git&#39;</c
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/09/25/Git 命令和错误集锦/"
-           data-title="" data-url="https://jane0219.github.io/2016/09/25/Git 命令和错误集锦/">
+           data-title="Git 命令和错误集锦" data-url="https://jane0219.github.io/2016/09/25/Git 命令和错误集锦/">
       </div>
     
   </div>
@@ -640,7 +636,7 @@ error: failed to push some refs to &#39;git@github.com:jane0219/test.git&#39;</c
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前话：安装git"><span class="nav-number">1.</span> <span class="nav-text">前话：安装git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（一）向远端提交项目："><span class="nav-number">2.</span> <span class="nav-text">（一）向远端提交项目：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#如果之前没有建立本地仓库的话先执行这里："><span class="nav-number">2.0.1.</span> <span class="nav-text">如果之前没有建立本地仓库的话先执行这里：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#如果已经有本地仓库了，从这部开始就行"><span class="nav-number">2.0.2.</span> <span class="nav-text">如果已经有本地仓库了，从这部开始就行:</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（二）建立分支："><span class="nav-number">3.</span> <span class="nav-text">（二）建立分支：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#分值操作："><span class="nav-number">3.1.</span> <span class="nav-text">分值操作：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（三）常用命令："><span class="nav-number">4.</span> <span class="nav-text">（三）常用命令：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（四）提交文件常见错误："><span class="nav-number">5.</span> <span class="nav-text">（四）提交文件常见错误：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-命令和错误集锦"><span class="nav-number">1.</span> <span class="nav-text">Git 命令和错误集锦</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前话：安装git"><span class="nav-number">1.1.</span> <span class="nav-text">前话：安装git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（一）向远端提交项目："><span class="nav-number">1.2.</span> <span class="nav-text">（一）向远端提交项目：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#如果之前没有建立本地仓库的话先执行这里："><span class="nav-number">1.2.0.1.</span> <span class="nav-text">如果之前没有建立本地仓库的话先执行这里：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#如果已经有本地仓库了，从这部开始就行"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">如果已经有本地仓库了，从这部开始就行:</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（二）建立分支："><span class="nav-number">1.3.</span> <span class="nav-text">（二）建立分支：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#分值操作："><span class="nav-number">1.3.1.</span> <span class="nav-text">分值操作：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（三）常用命令："><span class="nav-number">1.4.</span> <span class="nav-text">（三）常用命令：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（四）提交文件常见错误："><span class="nav-number">1.5.</span> <span class="nav-text">（四）提交文件常见错误：</span></a></li></ol></li></ol></div>
             
           </div>
         </section>

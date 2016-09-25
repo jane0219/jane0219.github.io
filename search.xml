@@ -4,15 +4,14 @@
   
     
     <entry>
-      <title></title>
+      <title><![CDATA[Git 命令和错误集锦]]></title>
       <url>https://jane0219.github.io/2016/09/25/Git%20%E5%91%BD%E4%BB%A4%E5%92%8C%E9%94%99%E8%AF%AF%E9%9B%86%E9%94%A6/</url>
-      <content type="html"><![CDATA[<p>###Git 命令和错误集锦</p>
-<hr>
+      <content type="html"><![CDATA[<h3 id="Git-命令和错误集锦"><a href="#Git-命令和错误集锦" class="headerlink" title="Git 命令和错误集锦"></a>Git 命令和错误集锦</h3><hr>
 <h4 id="前话：安装git"><a href="#前话：安装git" class="headerlink" title="前话：安装git"></a>前话：安装git</h4><p>官方网站下载：<br><a href="http://code.google.com/p/msysgit/downloads/list" target="_blank" rel="external">http://code.google.com/p/msysgit/downloads/list</a></p>
 <p> 下载安装包后，打开执行，然后一路next.<br> 安装完成后，在桌面右键会出现 git bash here的标志和字样，说明安装成功。<br><a id="more"></a><br>然后我们就需要与远程的github相连接，才能进行本地管理。这仅需要三步：<br><code>$ git config --global user.name 你的github名称</code><br><code>$ git config --global user.email 你注册github的邮箱</code></p>
 <p> 注意：这里的–global代表你电脑的所有本地仓库都会使用你的这个配置。</p>
-<p>然后执行 $ssh-keygen -t rsa -C “你的邮箱”这里会让你输入密码，我们选择默认直接enter就行，不然之后可能会报错。<br>执行完后这时候会在你的电脑的 C/用户/Adiministor/.ssh/id_rsa.pub 生成这个key文件（id_rsa.pub）<br><img src="./1474722294367.png" alt="Alt text"></p>
-<p>找到打开它，复制里面的代码然后到你的github上，右侧点击头像下面的setting<br><img src="./1474722248866.png" alt="Alt text"><br>然后点击左边栏的SSH and GPG key<br><img src="./1474722385417.png" alt="Alt text"><br>然后点击new SSH key进行key添加，把你电脑上的key粘贴到key下面的内容区，然后点 add ssh key<br><img src="./1474722569368.png" alt="Alt text"></p>
+<p>然后执行 $ssh-keygen -t rsa -C “你的邮箱”这里会让你输入密码，我们选择默认直接enter就行，不然之后可能会报错。<br>执行完后这时候会在你的电脑的 C/用户/Adiministor/.ssh/id_rsa.pub 生成这个key文件（id_rsa.pub）<br><img src="/images/1474722294367.png" alt="Alt text"></p>
+<p>找到打开它，复制里面的代码然后到你的github上，右侧点击头像下面的setting<br><img src="/images/1474722248866.png" alt="Alt text"><br>然后点击左边栏的SSH and GPG key<br><img src="/images/1474722385417.png" alt="Alt text"><br>然后点击new SSH key进行key添加，把你电脑上的key粘贴到key下面的内容区，然后点 add ssh key<br><img src="/images/1474722569368.png" alt="Alt text"></p>
 <p>至此你本地已经和github链接上了</p>
 <hr>
 <h4 id="（一）向远端提交项目："><a href="#（一）向远端提交项目：" class="headerlink" title="（一）向远端提交项目："></a>（一）向远端提交项目：</h4><h6 id="如果之前没有建立本地仓库的话先执行这里："><a href="#如果之前没有建立本地仓库的话先执行这里：" class="headerlink" title="如果之前没有建立本地仓库的话先执行这里："></a>如果之前没有建立本地仓库的话先执行这里：</h6><p>在桌面右击 git bash here   //（已经装过git了）<br>mkdir 文件夹名   //新建文件夹（作为本地仓库）<code>比如：mkdir project</code><br> cd project           //进入文件夹<br>git init             //初始化本地仓库</p>
