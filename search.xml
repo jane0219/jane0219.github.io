@@ -7,6 +7,7 @@
       <title><![CDATA[vue 分享记录]]></title>
       <url>https://jane0219.github.io/2017/02/04/vueShare/</url>
       <content type="html"><![CDATA[<p>本文是为了分享Vue相关知识点,从之前一篇<a href="http://chping.website/2016/11/28/Vue%E5%92%8CReact%E5%AF%B9%E6%AF%94/" target="_blank" rel="external">Vue和React对比</a>笔记中节选出来的。</p>
+<a id="more"></a>
 <p>一、数据双向绑定</p>
 <p>1.插值表达式<br>2.指令系统（声明式绑定）<br>3.Class与Style绑定<br>4.条件渲染和列表渲染<br>5.时间处理器<br>6.表单控件<br>7.计算属性<br>8.数据获取（axios）</p>
 <p>二、组件及数据流</p>
@@ -17,7 +18,6 @@
 <p>vue-Router</p>
 <p>五、其他</p>
 <p>1.过渡系统<br>2.服务端渲染</p>
-<a id="more"></a>
 <h1 id="Vue-简单介绍"><a href="#Vue-简单介绍" class="headerlink" title="Vue 简单介绍"></a>Vue 简单介绍</h1><p>Vue也已经升级到2.0版本了，到现在为止，比较流行的MVVM框架有<strong>AngularJS</strong>（也有人认为其为MVC）、<strong>ReactJS</strong>和<strong>VueJS</strong>，这三个框架中，以我现在的情况来说（AngularJS2还没有去接触），Vue应该是发展最快的。</p>
 <p>为什么现在MVVM框架这么火呢？JQuery挺好用的呀，为什么要去代替它？…</p>
 <p>可能会产生这样的疑问，在我看来，MVVM框架的流行是因为随着前端技术的发展对于要求越来越高和前端面对的场景越来越复杂导致了现实对于前端性能的要求也越来越高，这样像JQuery那样频繁的操作DOM节点的方式显然就不太合适了。所以MVVM开始逐渐流行开来，另外我认为JQuery目前来看还是不会被代替的，因为对于一些对性能要求不是很高的前端项目，是用JQuery来开发还是非常爽的。</p>
@@ -114,20 +114,6 @@
 <p>另外官方提供的服务端渲染的例子vue-hackernews2.0也很不错的，可以去借鉴看一看<br><a href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank" rel="external">https://github.com/vuejs/vue-hackernews-2.0</a></p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>现在我也是在搬砖阶段，深入的理解可能还需要一些时间。</p>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
-      <url>https://jane0219.github.io/2016/10/17/index/</url>
-      <content type="html"><![CDATA[<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-SSDSDSD
-</body>
-</html>]]></content>
     </entry>
     
     <entry>
