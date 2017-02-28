@@ -1,12 +1,421 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="MVVM,Vue," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="本文是为了分享Vue相关知识点,从之前一篇Vue和React对比笔记中节选出来的。
+一、数据双向绑定
+1.插值表达式2.指令系统（声明式绑定）3.Class与Style绑定4.条件渲染和列表渲染5.时间处理器6.表单控件7.计算属性8.数据获取（axios）
+二、组件及数据流
+1.创建组件2.使用组件3.生命周期4.组件之间信息传递
+三、状态管理
+vuex
+四、路由
+vue-Router
+五、其他">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue 分享记录">
+<meta property="og:url" content="https://jane0219.github.io/2017/02/04/vueShare/index.html">
+<meta property="og:site_name" content="小豌豆">
+<meta property="og:description" content="本文是为了分享Vue相关知识点,从之前一篇Vue和React对比笔记中节选出来的。
+一、数据双向绑定
+1.插值表达式2.指令系统（声明式绑定）3.Class与Style绑定4.条件渲染和列表渲染5.时间处理器6.表单控件7.计算属性8.数据获取（axios）
+二、组件及数据流
+1.创建组件2.使用组件3.生命周期4.组件之间信息传递
+三、状态管理
+vuex
+四、路由
+vue-Router
+五、其他">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3333422-04ea055c73c50c98.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-02-28T14:52:55.158Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vue 分享记录">
+<meta name="twitter:description" content="本文是为了分享Vue相关知识点,从之前一篇Vue和React对比笔记中节选出来的。
+一、数据双向绑定
+1.插值表达式2.指令系统（声明式绑定）3.Class与Style绑定4.条件渲染和列表渲染5.时间处理器6.表单控件7.计算属性8.数据获取（axios）
+二、组件及数据流
+1.创建组件2.使用组件3.生命周期4.组件之间信息传递
+三、状态管理
+vuex
+四、路由
+vue-Router
+五、其他">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/3333422-04ea055c73c50c98.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="https://jane0219.github.io/2017/02/04/vueShare/"/>
+
+  <title> vue 分享记录 | 小豌豆 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?680d1364008dadfd1fecdc462a01fd15";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
   
   
     
-    <entry>
-      <title><![CDATA[vue 分享记录]]></title>
-      <url>https://jane0219.github.io/2017/02/04/vueShare/</url>
-      <content type="html"><![CDATA[<p>本文是为了分享Vue相关知识点,从之前一篇<a href="http://chping.website/2016/11/28/Vue%E5%92%8CReact%E5%AF%B9%E6%AF%94/" target="_blank" rel="external">Vue和React对比</a>笔记中节选出来的。</p>
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">小豌豆</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Small DouDou</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                vue 分享记录
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-02-04T17:08:38+08:00" content="2017-02-04">
+              2017-02-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端/Vue/" itemprop="url" rel="index">
+                    <span itemprop="name">Vue</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/02/04/vueShare/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/04/vueShare/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/02/04/vueShare/" class="leancloud_visitors" data-flag-title="vue 分享记录">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本文是为了分享Vue相关知识点,从之前一篇<a href="http://chping.website/2016/11/28/Vue%E5%92%8CReact%E5%AF%B9%E6%AF%94/" target="_blank" rel="external">Vue和React对比</a>笔记中节选出来的。</p>
 <p>一、数据双向绑定</p>
 <p>1.插值表达式<br>2.指令系统（声明式绑定）<br>3.Class与Style绑定<br>4.条件渲染和列表渲染<br>5.时间处理器<br>6.表单控件<br>7.计算属性<br>8.数据获取（axios）</p>
 <p>二、组件及数据流</p>
@@ -113,167 +522,685 @@
 <h2 id="服务端渲染"><a href="#服务端渲染" class="headerlink" title="服务端渲染"></a>服务端渲染</h2><p>说道服务端渲染，其实官方对于使用SSR的原因和好处，解释的都很好，有兴趣的可以看一看 <a href="https://cn.vuejs.org/v2/guide/ssr.html" target="_blank" rel="external">https://cn.vuejs.org/v2/guide/ssr.html</a></p>
 <p>另外官方提供的服务端渲染的例子vue-hackernews2.0也很不错的，可以去借鉴看一看<br><a href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank" rel="external">https://github.com/vuejs/vue-hackernews-2.0</a></p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>现在我也是在搬砖阶段，深入的理解可能还需要一些时间。</p>
-]]></content>
-    </entry>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wex.png" alt="小豌豆 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫一扫我的微信，欢迎您与我交流共进！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>Enjoy it ? Donate me !</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/weixin.jpg" alt="小豌豆 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/zhifu.jpg" alt="小豌豆 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MVVM/" rel="tag">#MVVM</a>
+          
+            <a href="/tags/Vue/" rel="tag">#Vue</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/17/index/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/02/04/vueShare/"
+     data-title="vue 分享记录"
+     data-content=""
+     data-url="https://jane0219.github.io/2017/02/04/vueShare/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
-    <entry>
-      <title></title>
-      <url>https://jane0219.github.io/2016/10/17/index/</url>
-      <content type="html"><![CDATA[<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-SSDSDSD
+      <div class="ds-thread" data-thread-key="2017/02/04/vueShare/"
+           data-title="vue 分享记录" data-url="https://jane0219.github.io/2017/02/04/vueShare/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="小豌豆" />
+          <p class="site-author-name" itemprop="name">小豌豆</p>
+          <p class="site-description motion-element" itemprop="description">the wonderful thing is smell world.</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/jane0219" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://my.csdn.net/" target="_blank" title="CSDN">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  CSDN
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/li-xiao-ning-75" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html" title="javascript" target="_blank">javascript</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" title="flex布局" target="_blank">flex布局</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.kancloud.cn/wizardforcel/markdown-simple-world/97381" title="markdown" target="_blank">markdown</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" title="git教程" target="_blank">git教程</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue-简单介绍"><span class="nav-number">1.</span> <span class="nav-text">Vue 简单介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据双向绑定"><span class="nav-number">2.</span> <span class="nav-text">数据双向绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue的数据双向绑定"><span class="nav-number">2.1.</span> <span class="nav-text">Vue的数据双向绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#插值表达式"><span class="nav-number">2.1.1.</span> <span class="nav-text">插值表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指令"><span class="nav-number">2.1.2.</span> <span class="nav-text">指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Class与Style绑定"><span class="nav-number">2.1.3.</span> <span class="nav-text">Class与Style绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#条件渲染和列表渲染"><span class="nav-number">2.1.4.</span> <span class="nav-text">条件渲染和列表渲染</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件处理器"><span class="nav-number">2.1.5.</span> <span class="nav-text">事件处理器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表单控件"><span class="nav-number">2.1.6.</span> <span class="nav-text">表单控件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算属性"><span class="nav-number">2.1.7.</span> <span class="nav-text">计算属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据请求"><span class="nav-number">2.1.8.</span> <span class="nav-text">数据请求</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#组件及数据流"><span class="nav-number">3.</span> <span class="nav-text">组件及数据流</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#React中的组件和数据流"><span class="nav-number">3.1.</span> <span class="nav-text">React中的组件和数据流</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建组件"><span class="nav-number">3.1.1.</span> <span class="nav-text">创建组件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#createClass方式实现"><span class="nav-number">3.1.1.1.</span> <span class="nav-text">createClass方式实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类继承React-Component来实现"><span class="nav-number">3.1.1.2.</span> <span class="nav-text">类继承React.Component来实现</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组件之间的数据流"><span class="nav-number">3.1.2.</span> <span class="nav-text">组件之间的数据流</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#父子组件数据通信"><span class="nav-number">3.1.2.1.</span> <span class="nav-text">父子组件数据通信</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#非父子组件之间的通信"><span class="nav-number">3.1.2.2.</span> <span class="nav-text">非父子组件之间的通信</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组件的声明周期"><span class="nav-number">3.1.3.</span> <span class="nav-text">组件的声明周期</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue中的组件和数据流"><span class="nav-number">3.2.</span> <span class="nav-text">Vue中的组件和数据流</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#状态管理"><span class="nav-number">4.</span> <span class="nav-text">状态管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue中的状态管理–vuex"><span class="nav-number">4.1.</span> <span class="nav-text">Vue中的状态管理–vuex</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#路由"><span class="nav-number">5.</span> <span class="nav-text">路由</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue中的路由"><span class="nav-number">5.1.</span> <span class="nav-text">Vue中的路由</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他"><span class="nav-number">6.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#过渡系统"><span class="nav-number">6.1.</span> <span class="nav-text">过渡系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务端渲染"><span class="nav-number">6.2.</span> <span class="nav-text">服务端渲染</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">7.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小豌豆</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"DouDou"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("I81fN78I1YD0B2JhLPvPtxMy-gzGzoHsz", "zhHyl6MRoiQM7BIxIb7RL1g8");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
 </body>
-</html>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Git命令和错误集锦]]></title>
-      <url>https://jane0219.github.io/2016/09/25/Git%20%E5%91%BD%E4%BB%A4%E5%92%8C%E9%94%99%E8%AF%AF%E9%9B%86%E9%94%A6/</url>
-      <content type="html"><![CDATA[<h3 id="Git-命令和错误集锦"><a href="#Git-命令和错误集锦" class="headerlink" title="Git 命令和错误集锦"></a>Git 命令和错误集锦</h3><hr>
-<h4 id="前话：安装git"><a href="#前话：安装git" class="headerlink" title="前话：安装git"></a>前话：安装git</h4><p>官方网站下载：<br><a href="http://code.google.com/p/msysgit/downloads/list" target="_blank" rel="external">http://code.google.com/p/msysgit/downloads/list</a></p>
-<p> 下载安装包后，打开执行，然后一路next.<br> 安装完成后，在桌面右键会出现 git bash here的标志和字样，说明安装成功。<br><a id="more"></a><br>然后我们就需要与远程的github相连接，才能进行本地管理。这仅需要三步：<br><code>$ git config --global user.name 你的github名称</code><br><code>$ git config --global user.email 你注册github的邮箱</code></p>
-<p> 注意：这里的–global代表你电脑的所有本地仓库都会使用你的这个配置。</p>
-<p>然后执行 $ssh-keygen -t rsa -C “你的邮箱”这里会让你输入密码，我们选择默认直接enter就行，不然之后可能会报错。<br>执行完后这时候会在你的电脑的 C/用户/Adiministor/.ssh/id_rsa.pub 生成这个key文件（id_rsa.pub）<br><img src="/images/1474722294367.png" alt="Alt text"></p>
-<p>找到打开它，复制里面的代码然后到你的github上，右侧点击头像下面的setting<br><img src="/images/1474722248866.png" alt="Alt text"><br>然后点击左边栏的SSH and GPG key<br><img src="/images/1474722385417.png" alt="Alt text"><br>然后点击new SSH key进行key添加，把你电脑上的key粘贴到key下面的内容区，然后点 add ssh key<br><img src="/images/1474722569368.png" alt="Alt text"></p>
-<p>至此你本地已经和github链接上了</p>
-<hr>
-<h4 id="（一）向远端提交项目："><a href="#（一）向远端提交项目：" class="headerlink" title="（一）向远端提交项目："></a>（一）向远端提交项目：</h4><h6 id="如果之前没有建立本地仓库的话先执行这里："><a href="#如果之前没有建立本地仓库的话先执行这里：" class="headerlink" title="如果之前没有建立本地仓库的话先执行这里："></a>如果之前没有建立本地仓库的话先执行这里：</h6><p>在桌面右击 git bash here   //（已经装过git了）<br>mkdir 文件夹名   //新建文件夹（作为本地仓库）<code>比如：mkdir project</code><br> cd project           //进入文件夹<br>git init             //初始化本地仓库</p>
-<h6 id="如果已经有本地仓库了，从这部开始就行"><a href="#如果已经有本地仓库了，从这部开始就行" class="headerlink" title="如果已经有本地仓库了，从这部开始就行:"></a>如果已经有本地仓库了，从这部开始就行:</h6><p>git add 文件名/<em>  ( “ </em> ” 代表所有文件)<br>git commit –m “解释说明” （解释必须带上，避免进入文件编辑界面，如果进去了按ESC 然后：wq,再回车）<br>git remote add origin 远程地址 //建立远程连接<br>git push –set-upstream origin master<br>git push</p>
-<p>至此如果没有出错的话文件就提交到远程版本库了</p>
-<hr>
-<h4 id="（二）建立分支："><a href="#（二）建立分支：" class="headerlink" title="（二）建立分支："></a>（二）建立分支：</h4><p>提醒：一般工作之后master上边的东西我们是没有权限更改的（那是QA的辖域），所以在master基础上需要建立自己的分支，在自己的分支上对项目进行更改。</p>
-<h5 id="分值操作："><a href="#分值操作：" class="headerlink" title="分值操作："></a>分值操作：</h5><p>git checkout –b 分支名  //在master基础上复制一条分支来，并切换到新分支上<br>git checkout 分支名   //切换到指定分支<br>git branch    //查看分支<br>git branch –a   //查看包括远程的（包括别人建立的）所有分支<br>git merge master   //将自己的项目与master上的东西进行合并（为了避免别人也更改了项目，master东西被更改了）</p>
-<hr>
-<h4 id="（三）常用命令："><a href="#（三）常用命令：" class="headerlink" title="（三）常用命令："></a>（三）常用命令：</h4><p>ls  //显示所在文件夹的所有文件<br>mkdir // 新建一个文件夹<br>touch  //新建一个文件(不是文件夹)<br>git status   //查看当前状态<br>rm 删除  //（慎用）</p>
-<hr>
-<h4 id="（四）提交文件常见错误："><a href="#（四）提交文件常见错误：" class="headerlink" title="（四）提交文件常见错误："></a>（四）提交文件常见错误：</h4><p>1  执行git remote add origin git@github.com:jane0219/test.git时报错：<br><code>fatal: remote origin already exists.</code><br>解决：执行git remote rm origin   //删除远程主机名</p>
-<p>2.执行 git push 时报<br><code>fatal: The current branch master has no upstream branch.</code><br>解决：执行 git push –set-upstream origin master  //与远程master建立连接</p>
-<p>3.执行git push –set-upstream origin master市报错：<br>        <code>! [rejected]        master -&gt; master (fetch first)  
-error: failed to push some refs to &#39;git@github.com:jane0219/test.git&#39;</code></p>
-<p>解决： git pull “远程地址” 再执行git add … //本地更改文件或者上传新文件前要先跟版本库的东西进行merge 合并，远程版本库有的东西本地仓库没有的话会报错（原因还不敢确定）</p>
-<ol>
-<li>git pull 时报错：<br><code>refusing to merge unrelated histories</code></li>
-</ol>
-<p>解决：执行git pull origin master –allow-unrelated-histories //让git接受合并跟之前的项目的 无关项（以前的文件里没有的东西）</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[markdown语法指南]]></title>
-      <url>https://jane0219.github.io/2016/09/25/markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/</url>
-      <content type="html"><![CDATA[<h3 id="markdown语法指南"><a href="#markdown语法指南" class="headerlink" title="markdown语法指南"></a>markdown语法指南</h3><hr>
-<h4 id="入门说明："><a href="#入门说明：" class="headerlink" title="入门说明："></a>入门说明：</h4><hr>
-<p>定义：markdown 是一种轻量级标记语言，可以使用普通文本编辑器进行编辑的纯文本编辑语言。它可以把一篇纯文本文章转化为富文本，让读者得到清晰明了的阅读体验。<br>用途：markdown的语法简洁明了，所以很多人用它来写博客，就像我一样。</p>
-<a id="more"></a>
-<p>  它还可以用来编写说明文档，比如很多的readme文档都是用它写的。</p>
-<p>除此之外因为我们还有markdownPad和马克飞象这样的工具，所以我们可以随意将自己写的文件输出为html文件、或者psd文件等。</p>
-<h4 id="语法指南"><a href="#语法指南" class="headerlink" title="语法指南"></a>语法指南</h4><hr>
-<h5 id="（一）特殊字符处理"><a href="#（一）特殊字符处理" class="headerlink" title="（一）特殊字符处理"></a>（一）特殊字符处理</h5><p>在html文件中，有两个字符需要特殊处理，那就是：&lt; 和&amp;   。“&lt;”符号在html里是用作一个标签的开始符号，而“&amp;”符号用于标记html实体，<code>&amp;lt;</code>代表”&lt;”。<br>而markdown让你更自然的书写字符，需要转换的它会处理好。它会保留原状。</p>
-<hr>
-<h5 id="（二）换行"><a href="#（二）换行" class="headerlink" title="（二）换行"></a>（二）换行</h5><p>这里的换行方法是要分情况的;</p>
-<h6 id="（1）六级标题下的换行"><a href="#（1）六级标题下的换行" class="headerlink" title="（1）六级标题下的换行"></a>（1）六级标题下的换行</h6><p>只需要回车（enter）一下就可以了换行了，so easy~</p>
-<h6 id="（2）其他格式下"><a href="#（2）其他格式下" class="headerlink" title="（2）其他格式下"></a>（2）其他格式下</h6><p>不是六级标题下的话就需要，在你现在所在行敲两个或两个以上空格，或者一个tab键，再回车才可以实现换行。</p>
-<hr>
-<h5 id="（三）文字加粗"><a href="#（三）文字加粗" class="headerlink" title="（三）文字加粗"></a>（三）文字加粗</h5><h6 id="（1）利用-“-”-加粗"><a href="#（1）利用-“-”-加粗" class="headerlink" title="（1）利用  “#”  加粗"></a>（1）利用  “#”  加粗</h6><p>在markdown里要实现六级标题很简单，只要在你所写的文字前面加上  “#”  就可以。一个  “#”  号代表一级标题，一次两个代表二级标题……（#后面要加一个空格）例如：</p>
-<pre><code># 我是一级标题
-## 我是二级标题
-### 我是三级标题 
-</code></pre><p>对应效果：<br><img src="/images/1474192521970.png" alt="Alt text"></p>
-<h6 id="（2）利用下滑线-“-”或者-“—”"><a href="#（2）利用下滑线-“-”或者-“—”" class="headerlink" title="（2）利用下滑线  “===”或者 “—”"></a>（2）利用下滑线  “===”或者 “—”</h6><p>a.  “==”  出来的效果是一级标题<br>例如：</p>
-<p><img src="/images/1474193802503.png" alt="Alt text"></p>
-<p>b.  “–”出来的效果是二级标题<br><img src="/images/1474194148265.png" alt="Alt text"></p>
-<p><span style="font-size:20px;">*</span>注意：无论是用双下滑线还是单下划线 ，都需要写两个或者两个以上才可以。</p>
-<p>c.  用<strong>     </strong>包起来，比如：<br><code>**hello**</code><br>效果：<strong>hello</strong><br>d.  用<strong>       </strong>包起来，比如：<br><code>__hello__</code><br>效果：<strong>hello</strong><br>注：前后都是两个_或者*，如果是一个的话显示斜体。</p>
-<hr>
-<h5 id="（四）区块引用"><a href="#（四）区块引用" class="headerlink" title="（四）区块引用"></a>（四）区块引用</h5><p> markdown标记区块引用是使用类似email中的用&gt;的引用方式。如果你还熟悉在email新建中的引言部分，你就知道怎么在markdown中进行引用了。例如：</p>
-<pre><code>&gt;假如生活欺骗了你 不要悲伤 反正明天也一样  --李晓宁
-&gt; 生活不止眼前的苟且 还有读不懂的诗和到不了的远方  --李晓宁
-</code></pre><p>  对应效果：</p>
-<blockquote>
-<p>假如生活欺骗了你  不要悲伤  反正明天也一样  –李晓宁<br>生活不止眼前的苟且  还有读不懂的诗和到不了的远方  –李晓宁</p>
-</blockquote>
-<h6 id="（a）区块引用可以嵌套-比如："><a href="#（a）区块引用可以嵌套-比如：" class="headerlink" title="（a）区块引用可以嵌套  比如："></a>（a）区块引用可以嵌套  比如：</h6><pre><code>&gt;生活不止眼前的苟且
-   &gt;&gt;还有读不懂的诗和到不了的远方
-</code></pre><p>效果：</p>
-<blockquote>
-<p>生活不止眼前的苟且</p>
-<blockquote>
-<p>还有读不懂的诗和到不了的远方</p>
-</blockquote>
-</blockquote>
-<h6 id="（b）引用的区块内也可以使用其他的-Markdown-语法，包括标题、列表、代码区块等："><a href="#（b）引用的区块内也可以使用其他的-Markdown-语法，包括标题、列表、代码区块等：" class="headerlink" title="（b）引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等："></a>（b）引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</h6><pre><code>&gt;###生活不止眼前的苟且
-    &gt;&gt;好友读不懂的诗和到不了的远方
-</code></pre><p>效果：</p>
-<blockquote>
-<h3 id="生活不止眼前的苟且"><a href="#生活不止眼前的苟且" class="headerlink" title="生活不止眼前的苟且"></a>生活不止眼前的苟且</h3><blockquote>
-<p>还有读不懂的诗和到不了的远方</p>
-<hr>
-<h5 id="（五）列表"><a href="#（五）列表" class="headerlink" title="（五）列表"></a>（五）列表</h5><h6 id="（1）无序列表："><a href="#（1）无序列表：" class="headerlink" title="（1）无序列表："></a>（1）无序列表：</h6><p>a.用  “+”  号做标记（“+” 号后一定要有空格）  例如：<br><code>+ 我的生活</code><br><code>+ 我的爱好</code></p>
-</blockquote>
-</blockquote>
-<p>效果：</p>
-<ul>
-<li>我的生活</li>
-<li>我的爱好</li>
-</ul>
-<p>b. 用 “-” 号做标记（后面也要有空格） 例如：<br><code>- 我的生活</code><br><code>- 我的爱好</code></p>
-<p>效果：</p>
-<ul>
-<li>我的生活</li>
-<li>我的爱好</li>
-</ul>
-<p>c.用  “<em>”  做标记（记得空格） 例如：<br>``</em> 我的生活<code>``* 我的爱好</code></p>
-<p> 效果：</p>
-<ul>
-<li>我的生活</li>
-<li>我的爱好</li>
-</ul>
-<h6 id="（2）有序列表"><a href="#（2）有序列表" class="headerlink" title="（2）有序列表"></a>（2）有序列表</h6><p>使用数字接着一个英文句号就OK  比如：</p>
-<ol>
-<li>小狗</li>
-<li>小猫</li>
-<li>小猪</li>
-</ol>
-<p>*注意：若是往列表里嵌入代码块，要首行做进至少8个空格或两个制表符。</p>
-<hr>
-<h5 id="（六）代码块"><a href="#（六）代码块" class="headerlink" title="（六）代码块"></a>（六）代码块</h5><h6 id="（1）用英文状态下的-nbsp-nbsp-引起来-例如："><a href="#（1）用英文状态下的-nbsp-nbsp-引起来-例如：" class="headerlink" title="（1）用英文状态下的 ``  &nbsp;&nbsp;  ``引起来,例如："></a>（1）用英文状态下的 ``  &nbsp;&nbsp;  ``引起来,例如：</h6><p><img src="/images/1474380803358.png" alt="Alt text"></p>
-<p>效果：<br><img src="/images/1474380814707.png" alt="Alt text"></p>
-<h6 id="（2）一个tab键或者三个以上空格之后再回车就会生成一个代码块，会自带高亮和背景。"><a href="#（2）一个tab键或者三个以上空格之后再回车就会生成一个代码块，会自带高亮和背景。" class="headerlink" title="（2）一个tab键或者三个以上空格之后再回车就会生成一个代码块，会自带高亮和背景。"></a>（2）一个tab键或者三个以上空格之后再回车就会生成一个代码块，会自带高亮和背景。</h6><p>比如：(注意前边空格)<br> &nbsp;&nbsp;&nbsp;&nbsp;<br> <code>&lt;p&gt;nihao&lt;/p&gt;</code></p>
-<pre><code>&lt;p&gt;nihao&lt;/p&gt;
-</code></pre><hr>
-<h5 id="（七）插入图片"><a href="#（七）插入图片" class="headerlink" title="（七）插入图片"></a>（七）插入图片</h5><p> Markdown 使用一种和链接（一会我们会讲）很相似的语法来标记图片，同样也允许两种样式： 行内式和参考式。</p>
-<h6 id="（1）行内式"><a href="#（1）行内式" class="headerlink" title="（1）行内式"></a>（1）行内式</h6><p>语法：! [图片标题] (图片地址)<br>例如：</p>
-<pre><code>! [&quot;小女孩&quot;](/images/avatar.jpg)
-</code></pre><p>效果：<br><img src="/images/avatar.jpg" alt="&quot;小女孩&quot;"></p>
-<h6 id="（2）参考式"><a href="#（2）参考式" class="headerlink" title="（2）参考式"></a>（2）参考式</h6><p>语法：! <a href="/images/avatar.jpg">图片标题</a><br></p>
-<pre><code>[id]:url
-</code></pre><p>例如：</p>
-<pre><code>! [&quot;小女孩&quot;](/images/avatar.jpg)
-</code></pre><p>效果：<br><img src="/images/avatar.jpg" alt="&quot;小女孩&quot;"></p>
-<hr>
-<p>#####（八）超链接<br>超链接的语法格式跟插入图片的格式很是相似，它也有两种链接方式：行内式和参考式<br>语法分别和图片语法相似（这里就不做详细说明，相信大家都能懂）</p>
-<h6 id="1-行内式"><a href="#1-行内式" class="headerlink" title="1.行内式"></a>1.行内式</h6><p>[链接文字] (链接地址)</p>
-<h6 id="2-参考式"><a href="#2-参考式" class="headerlink" title="2.参考式"></a>2.参考式</h6><p>[链接文字]  <code>[</code><a href="/images/avatar.jpg">id</a><code>]</code><br><code>[</code>id<code>]</code>:链接地址</p>
-<hr>
-<h5 id="（九）分割线"><a href="#（九）分割线" class="headerlink" title="（九）分割线"></a>（九）分割线</h5><p>生成分割线的方式有很多种，下面给大家介绍几种通用的方式：<br><code>***</code>(三个或三个以上“ * ”连写)<br><code>---</code>（三个或三个以上“ - ”连写）(连接线)<br><code>___</code>（三个或三个以上“ _”连写）(下滑线)</p>
-<h2 id="效果分别是："><a href="#效果分别是：" class="headerlink" title=" 效果分别是："></a> 效果分别是：</h2><hr>
-<hr>
-<h5 id="（十）表格"><a href="#（十）表格" class="headerlink" title="（十）表格"></a>（十）表格</h5><p>对于markdown我唯一觉得不怎么舒服的地方就是表格的编写，这是一个比较累人的地方，它的书写格式有点麻烦，在这个方面它就没有html简单了。下面是markdown书写表格的语法格式：</p>
-<pre><code>|table|Are |cool|
-|-----|----|----|
-|name |age |addr|
-</code></pre><p>效果如下：<br> |table|Are|cool|<br> |—–|—|—|<br> |name|age|addr|<br> |name|age|addr|</p>
-<hr>
-<h5 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h5><p>以上是一些比较常用的markdown语法的使用介绍，希望对大家学习markdown能带来帮助。如果有好的提议，欢迎大家跟我一起交流。</p>
-<p>本人博客：<a href="http://lxning.club" target="_blank" rel="external">http://lxning.club</a><br>邮箱：lxningdou@163.com</p>
-<p>出自：李晓宁</p>
-]]></content>
-    </entry>
-    
-  
-  
-</search>
+</html>
